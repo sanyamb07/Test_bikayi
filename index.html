@@ -4,12 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
-
   <title>Ghibli App</title>
-  
   <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,35 +19,41 @@
 
     <div class="container">
         
-        <select id="sel">
-                <option value="">-- Select --</option>
+        <select id="sel"><option>Year</option></select>
+        <select id="select"><option>Category</option></select>
+       
         </select>
-
-    </div>
-    <div class="wrapper">
-        Prize List
-        <div class="profile">
-            <table id="jsonTable" style="visibility:hidden">
-                    <thead>
-                        <tr>
-                            <th>Year</th>
-                            <th>Category</th>
-                            <th>Laureates</th>
-                            <th>Laureates</th>
-                            <th>Laureates</th>
+        <h3>Prize List</h3>
+        <div class="wrapper row">
+            
+            <div class="profile col-lg-6">
+                <table id="jsonTable" class="table-bordered table table-striped table-responsive" >
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Category</th>
+                                <th>Laureates</th>
+                                <th>Laureates</th>
+                                <th>Laureates</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
                             
-                        </tr>
-                    </thead>
-                    <tbody>
-                        
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                    
+            </div>
+
+            <section id="repeating-names">
+                <h3>Noble Prize Winner</h3>
+            </section>
                 
         </div>
-            
-    </div>
 
-   
+    </div>
+    
+
 </body>
 
 </html>
